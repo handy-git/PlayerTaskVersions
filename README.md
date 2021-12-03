@@ -5,7 +5,7 @@
 > PlayerTask version profile management
 
 ## version
-> PlayerTask-1.10.0
+> PlayerTask-1.10.1
 
 ## resources
 

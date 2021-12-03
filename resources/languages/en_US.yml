@@ -1,21 +1,21 @@
 # Alert when you don't have permission
-noPermission: "&4 you do not have permission to execute this command"
+noPermission: "&4You do not have permission to execute this command"
 # Remind when reloading plugins
-reloadMsg: "&a plugin reload complete"
+reloadMsg: "&aPlugin reload complete"
 # vault alert
-vaultSucceedMsg: "&a successfully loaded Vault, enabling economy-related features!"
+vaultSucceedMsg: "&aSuccessfully loaded Vault, enabling economy-related features!"
 vaultFailureMsg: "&4Vault not found, economy-related features not enabled!"
 # placeholderAPI alert
-placeholderAPISucceedMsg: "&a successfully loaded placeholderApi, enable custom variable function!"
-placeholderAPIFailureMsg: "&4 no placeholderApi found, custom variables not enabled!"
+placeholderAPISucceedMsg: "&aSuccessfully loaded placeholderApi, enable custom variable function!"
+placeholderAPIFailureMsg: "&4no placeholderApi found, custom variables not enabled!"
 # PlayerPointsAlerts
-playerPointsSucceedMsg: "&a successfully loaded PlayerPoints, enable points related features!"
-playerPointsFailureMsg: "&4 PlayerPoints not found, not enabled!"
+playerPointsSucceedMsg: "&aSuccessfully loaded PlayerPoints, enable points related features!"
+playerPointsFailureMsg: "&4PlayerPoints not found, not enabled!"
 # PlayerPointsAlerts
-MythicMobsSucceedMsg: "&a successfully loaded MythicMobs, MM related features enabled!"
+MythicMobsSucceedMsg: "&aSuccessfully loaded MythicMobs, MM related features enabled!"
 MythicMobsFailureMsg: "&4MythicMobs not found, MM-related features not enabled!"
 # Citizens alert
-CitizensSucceedMsg: "&a successfully loaded Citizens, enabling NPC related features!"
+CitizensSucceedMsg: "&aSuccessfully loaded Citizens, enabling NPC related features!"
 CitizensFailureMsg: "&4Citizens not found, NPC-related features not enabled!"
 
 # /plk command administrator alerts appear
@@ -39,25 +39,25 @@ helps:
   - "&e/plk reload &f reload configuration file"
   - "&e/plk addNpcTask [task id] [npcId] [whether task is permanent] [number of completable] [cooldown] (predecessor task id) &f add npc task"
   - "&e/plk delNpcTask [npcId] &f remove npc task"
-  - "&e/plk setRarity [task id] [rarity] &f setTaskRarity"
-  - "&e/plk changeItem [quest id] (player name) &f converts the quest with the corresponding id into a quest scroll (if the player name is entered, it will be bound to the corresponding player)"
-  - "&e/plk setDescription [task id] [task description] &f add task description"
-  - "&e[]Required ()Optional"
+  - "&e/plk setRarity [task id] [rarity] &f set task rarity"
+  - "&e/plk changeItem [task id] (player name) &f convert the task with the corresponding id into a task scroll (if you enter a player name, it will be bound to the corresponding player)"
+  - "&e/plk setDescription [quest id] [quest description] &f add quest description"
+  - "&e[] required ()optional"
 
 # Parameter error alert
-paramFailureMsg: "&4 parameter error, please enter /plk help to see the correct command"
+paramFailureMsg: "&4parameter error, please enter /plk help to see the correct command"
 # Non-player alert
-noPlayerFailureMsg: "&4 This command can only be executed by the player"
+noPlayerFailureMsg: "&4This command can only be executed by the player"
 # Type error alert
-typeFailureMsg: "&4 type error"
+typeFailureMsg: "&4type error"
 # Number format alert
-amountFailureMsg: "&4 number can only be a number greater than 0"
+amountFailureMsg: "&4number can only be a number greater than 0"
 # id format alert
 idFailureMsg: "&4ID can only be a number greater than 0"
 # Item is empty reminder
 noAir: "&4You don't have an item in your master's hand"
 # Reminder of successful command execution
-succeedMsg: "&a command execution succeeded"
+succeedMsg: "&acommand execution succeeded"
 # Reminder of command execution failure
 failureMsg: "&4Command execution failed"
 # Click to select
@@ -67,20 +67,20 @@ finish: "&aClick to finish selection"
 # No MythicMob monsters to select
 noMythicMob: "&4No MythicMob monsters available for selection"
 # There is no such monster type
-noNormalMob: "&4 No such monster type"
+noNormalMob: "&4No such monster type"
 # rewardType
-rewardType: "&a reward type: "
+rewardType: "&areward type: "
 # Quest type
-demandType: "&a quest type: "
+demandType: "&aquest type: "
 # Submit quest item
-submitFailureMsg: "&4 task demand item ${item} insufficient quantity"
-submitSucceedMsg: "&a task demand item${item} submitted successfully"
-idNotExist: "&a task id does not exist"
-parentIdNotExist: "&a task predecessor id does not exist"
-npcExistTask: "&a This npc has been bound to a task!"
-taskTypeFailureMsg: "&4 task type error"
-updateLog: "&a Latest version detected: ${version},update content: ${body}"
-currentPage: "&a Current page:"
+submitFailureMsg: "&4task demand item ${item} insufficient quantity"
+submitSucceedMsg: "&atask demand item${item} submitted successfully"
+idNotExist: "&atask id does not exist"
+parentIdNotExist: "&atask predecessor id does not exist"
+npcExistTask: "&aThis npc has been bound to a task!"
+taskTypeFailureMsg: "&4task type error"
+updateLog: "&aLatest version detected: ${version},update content: ${body}"
+currentPage: "&aCurrent page:"
 totalPages: "&aTotal pages:"
 nextPage: "&aClick to next page"
 previousPage: "&aClick to go to previous page"
@@ -116,36 +116,35 @@ shop:
   lores:
     - ''
     - '&f[ &c product description &f]'
-    - '&f&l>> &a item number: &f> ${id}'
-    - '&f&l>> &aBuyable times: &f> ${num}'
+    - '&f>> &a item number: &f> ${id}'
+    - '&f>> &aBuyable times: &f> ${num}'
     - ''
     - '&f[ &c item price &f]'
     - ''
-    - '&c&l>> &aBuying cost ${price}'
+    - '&c>> &aBuying cost ${price}'
     - ''
     - '&f[ &cpersonal economy &f]'
-    - '&c&l>> &a currently owns ${playerMoney}'
+    - '&c>> &a currently owns ${playerMoney}'
     - ''
     - '&6>>&4>>&5>> ${buyButton} &6<<&4<<&5<<'
-  itemStackBuyButton: "&6>>&4>>&5>> &f&l click to buy &6<&4<&5<<"
-  itemStackNoBalanceButton: "&6>>&4>>&5>> &f&lInsufficient Balance &6<&4<&5<<"
+  itemStackBuyButton: "&6>>&4>>&5>> &f click to buy &6<&4<&5<<"
+  itemStackNoBalanceButton: "&6>>&4>>&5>> &fInsufficient Balance &6<&4<&5<<"
   buySucceed: "&aPurchase successful"
-  noBalanceButton: "&4&l Insufficient balance"
-
-# open gui language file
+  noBalanceButton: "&4 balance insufficient"
+# open gui language files
 open:
-  # taskDisplaylore ${taskTarget} taskTarget ${taskSchedule} taskProgress ${taskReward} taskReward ${buyButton} button
+  # taskDisplaylore ${taskTarget} taskTarget ${taskSchedule} taskProgress ${taskReward} taskReward ${buyButton} button ${description} taskDescription
   taskLore:
     - ''
-    - '&c&l>> &aRarity: &f${rarity}'
+    - '&c>> &aRarity: &f${rarity}'
     - ''
-    - '&f[ &cmissionObjective &f]'
+    - '&f[ &c task goal &f]'
     - ''
-    - '&c&l>> &a${taskSchedule}'
+    - '&c>> &a${taskSchedule}'
     - ''
     - '&f[ &cTaskReward &f]'
     - ''
-    - '&c&l>> &a${taskReward}'
+    - '&c>> &a${taskReward}'
     - ''
     - '&6>>&4>>&5>> ${buyButton} &6<<&4<<&5<<'
   # Configuration error alert
@@ -162,9 +161,9 @@ open:
   taskFinishFailure: "&aYou completed the task, but a system error occurred"
   # Task completion alert Task name variable &{taskName}
   taskManager: "&aCongratulations, you have reached the task goal of task: ${taskName}"
-  noFinish: "&f&lClick Finish"
-  finish: "&a&l has completed"
-  isFinish: "&a&lThe task has already been completed"
+  noFinish: "&fClick Finish"
+  finish: "&a has completed"
+  isFinish: "&aThe task has already been completed"
   view: "<<<Required items on the left, rewarded items on the right>>"
   back: "back"
 
@@ -180,11 +179,11 @@ create:
   noFinish: "&4 Failed to create task"
 
 guiType:
-  open: "&4 daily task list"
-  shop: "&4Task Coin Mall"
-  createDemand: "&4Please click to select mission goal"
+  open: "&4 Daily task list"
+  shop: "&4TaskcoinShop"
+  createDemand: "&4Please click to select task target"
   createRewards: "&4Please click to select mission rewards"
-  viewDemand: "&4List of mission goals"
+  viewDemand: "&4List of mission targets"
   viewRewards: "&4 list of mission rewards"
   viewList: "&4List of quests"
   viewNpc: "&4NPC quest list"
@@ -193,40 +192,40 @@ guiType:
   taskNpc: "&4Task list"
 
 rarity:
-  normal: "&f normal task"
+  Normal: "&fNormal quests"
   advanced: "&1Advanced quests"
   rare: "&5Rare quests"
   rarer: "&d rare quests"
   epic: "&eEpic quests"
-  mythical: "&e&l mythical quests"
+  mythical: "&e mythical quests"
 
 view:
-  # taskListLore ${taskId} task ID ${taskType} task type ${taskTarget} task target ${taskReward} task reward ${buyButton} button
+  # taskListLore ${taskId} task ID ${taskType} task type ${taskTarget} task target ${taskReward} task reward ${buyButton} button ${description} task description
   taskListLore:
     - ''
-    - '&c&l>> &aID: &f${taskId}'
-    - '&c&l>> &aType: &f${taskType}'
-    - '&c&l>> &aRarity: &f${rarity}'
+    - '&c>> &aID: &f${taskId}'
+    - '&c>> &aType: &f${taskType}'
+    - '&c>> &aRarity: &f${rarity}'
     - ''
     - '&f[ &cTaskTarget &f]'
     - ''
-    - '&c&l>> &a${taskTarget}'
+    - '&c>> &a${taskTarget}'
     - ''
     - '&f[ &cTaskReward &f]'
     - ''
-    - '&c&l>> &a${taskReward}'
+    - '&c>> &a${taskReward}'
     - ''
     - '&6>>&4>>&5>> &bClick to delete &6<<&4<<&5<<'
   taskNpcLore:
     - ''
-    - '&c&l>> &a ID: &f${id}'
-    - '&c&l>> &a TaskId: &f${taskId}'
-    - '&c&l>> &a pre-taskId: &f${parentId}'
-    - '&c&l>> &a Preceding task name: &f${parentName}'
-    - '&c&l>> &a npcId: &f${npcId}'
-    - '&c&l>> &a whether permanent task: &f${isEver}'
-    - '&c&l>> &a How many times it can be done: &f${number}'
-    - '&c&l>> &a Mission cooldown: &f${cd}'
+    - '&c>> &a ID: &f${id}'
+    - '&c>> &a TaskId: &f${taskId}'
+    - '&c>> &a pre-taskId: &f${parentId}'
+    - '&c>> &a Preceding task name: &f${parentName}'
+    - '&c>> &a npcId: &f${npcId}'
+    - '&c>> &a whether permanent task: &f${isEver}'
+    - '&c>> &a How many times it can be done: &f${number}'
+    - '&c>> &a Mission cooldown: &f${cd}'
     - ''
     - '&6>>&4>>&5>> &bClick to delete &6<<&4<<&5<<'
   yup: "&a yes"
@@ -250,7 +249,7 @@ tabHelp:
   parentId: "Please enter the pre-task id"
   command: "Please enter the command ${player} for the player, replace spaces with #"
   description: "Please enter a short description"
-  taskDescription: "Please enter a task description, colour codes are available&"
+  taskDescription: "Please enter the task description, you can use color code &"
 
 # Refresh button log
 refresh:
@@ -259,16 +258,16 @@ refresh:
     - ''
     - '&f[ &c refresh description &f]'
     - ''
-    - '&c&l>> Click the button to refresh today task!'
-    - '&c&l>> If the task has already been claimed and completed!'
-    - '&c&l>> Cannot proceed to refresh!'
+    - '&c>> Click the button to refresh today task!'
+    - '&c>> If the task is completed!'
+    - '&c>> Cannot proceed to refresh!'
     - ''
-    - '&c&l>> Refreshable times: &a${times}'
+    - '&c>> Refreshable times: &a${times}'
     - ''
     - '&f[ &c refresh price &f]'
     - ''
-    - '&c&l>> Gold: &a${cost}'
-    - '&c&l>> Points: &a${points}'
+    - '&c>> Gold: &a${cost}'
+    - '&c>> Points: &a${points}'
     - ''
     - '&6>>&4>>&5>> &b${button} &6<<&4<<&5<<'
   refreshButton: "&6>>&4>>&5>> &bClick to refresh &6<&4<&5<<"
@@ -284,10 +283,14 @@ title:
   name: "&e Daily Task System"
   lore:
     - ''
-    - '&c&l>> Tasks&a daily&c&l automatically refresh randomly!'
-    - '&c&l>> Mouse&a left click&c&l to complete the task!'
-    - '&c&l>> Mouse&a middle button&c&l click to submit quest items!'
-    - '&c&l>> Mouse&a right click&c&l to view quest requirements and rewards!'
+    - '&c>> Tasks &a daily'
+    - '&c>> &cautomatically refresh randomly!'
+    - '&c>> Mouse&a left click'
+    - '&c>> &cto complete the task!'
+    - '&c>> Mouse&a middle button'
+    - '&c>> &cclick to submit quest items!'
+    - '&c>> Mouse&a right click'
+    - '&c>> &cto view quest requirements and rewards!'
 
 taskNpc:
   # taskShowlore ${taskTarget} taskTarget ${taskReward} taskReward ${taskNumber} taskNumber ${buyButton} button
@@ -295,15 +298,15 @@ taskNpc:
     - ''
     - '&f[ &c taskTarget &f]'
     - ''
-    - '&c&l>> &a${taskTarget}'
+    - '&c>> &a${taskTarget}'
     - ''
     - '&f[ &cTaskReward &f]'
     - ''
-    - '&c&l>> &a${taskReward}'
+    - '&c>> &a${taskReward}'
     - ''
     - '&f[ &cCompleteable times &f]'
     - ''
-    - '&c&l>> &a${taskNumber}'
+    - '&c>> &a${taskNumber}'
     - ''
     - '&6>>&4>>&5>> &aClick to collect &6<<&4<<&5<<'
   isEver: "&a unlimited"
@@ -316,6 +319,27 @@ taskNpc:
     name: "&eNpc Task System"
     lore:
       - ''
-      - '&c&l>> Mouse&a left click&c&l to complete the task!'
-      - '&c&l>> Mouse&a middle button&c&l click to submit quest item!'
-      - '&c&l>> Mouse&a right click&c&l to view quest requirements and rewards!'
+      - '&c>> Mouse&a left click&c to complete the task!'
+      - '&c>> Mouse&a middle button&c click to submit quest item!'
+      - '&c>> Mouse&a right click&c to view quest requirements and rewards!'
+
+# quest scroll gui language file
+reel:
+  # taskShowlore ${bindPlayer} bind player ${taskTarget} task target ${taskSchedule} task progress ${taskReward} task reward ${reelButton} button
+  taskLore:
+    - ''
+    - '&c>> &aBindPlayer: &f${bindPlayer}'
+    - '&c>> &aRarity: &f${rarity}'
+    - ''
+    - '&f[ &cQuestObjectives &f]'
+    - ''
+    - '&c>> &a${taskSchedule}'
+    - ''
+    - '&f[ &cTaskReward &f]'
+    - ''
+    - '&c>> &a${taskReward}'
+    - ''
+    - '&6>>&4>>&5>> ${reelButton} &6<<&4<<&5<<'
+  noBindPlayer: "&f none"
+  noFinish: "&fClick to finish"
+  finish: "&a has finished"

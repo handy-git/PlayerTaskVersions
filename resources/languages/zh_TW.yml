@@ -134,7 +134,7 @@ shop:
 
 # open gui 語言文件
 open:
-  # 任務展示lore ${taskTarget}任務目標 ${taskSchedule} 任務進度 ${taskReward}任務獎勵 ${buyButton}按鈕
+  # 任務展示lore ${taskTarget}任務目標 ${taskSchedule} 任務進度 ${taskReward}任務獎勵 ${buyButton}按鈕 ${description}任務描述
   taskLore:
     - ''
     - '&c&l>> &a稀有度: &f${rarity}'
@@ -201,7 +201,7 @@ rarity:
   mythical: "&e&l神話任務"
 
 view:
-  # 任務展示lore ${taskId} 任務ID ${taskType} 任務類型 ${taskTarget}任務目標  ${taskReward}任務獎勵 ${buyButton}按鈕
+  # 任務展示lore ${taskId} 任務ID ${taskType} 任務類型 ${taskTarget}任務目標  ${taskReward}任務獎勵 ${buyButton}按鈕 ${description}任務描述
   taskListLore:
     - ''
     - '&c&l>> &aID: &f${taskId}'
@@ -319,3 +319,24 @@ taskNpc:
       - '&c&l>> 鼠標&a左鍵&c&l點擊完成任務!'
       - '&c&l>> 鼠標&a中鍵&c&l點擊提交任務物品!'
       - '&c&l>> 鼠標&a右鍵&c&l點擊查看任務要求和獎勵!'
+
+# 任務卷軸 gui 語言文件
+reel:
+  # 任務展示lore ${bindPlayer} 綁定玩家 ${taskTarget}任務目標 ${taskSchedule} 任務進度 ${taskReward}任務獎勵 ${reelButton}按鈕
+  taskLore:
+    - ''
+    - '&c&l>> &a綁定玩家: &f${bindPlayer}'
+    - '&c&l>> &a稀有度: &f${rarity}'
+    - ''
+    - '&f[ &c任務目標 &f]'
+    - ''
+    - '&c&l>> &a${taskSchedule}'
+    - ''
+    - '&f[ &c任務獎勵 &f]'
+    - ''
+    - '&c&l>> &a${taskReward}'
+    - ''
+    - '&6>>&4>>&5>> ${reelButton} &6<<&4<<&5<<'
+  noBindPlayer: "&f無"
+  noFinish: "&f&l點擊完成"
+  finish: "&a&l已完成"
