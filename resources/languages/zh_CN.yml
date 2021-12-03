@@ -1,0 +1,342 @@
+# 没权限时候提醒
+noPermission: "&4你没有权限执行该命令"
+# 重载插件提醒
+reloadMsg: "&a插件重载完成"
+# vault提醒
+vaultSucceedMsg: "&a成功加载Vault,启用经济相关功能!"
+vaultFailureMsg: "&4未找到Vault,未启用经济相关功能!"
+# placeholderAPI提醒
+placeholderAPISucceedMsg: "&a成功加载placeholderApi,启用自定义变量功能!"
+placeholderAPIFailureMsg: "&4未找到placeholderApi,未启用自定义变量功能!"
+# PlayerPoints提醒
+playerPointsSucceedMsg: "&a成功加载PlayerPoints,启用点券相关功能!"
+playerPointsFailureMsg: "&4未找到PlayerPoints,未启用点券相关功能!"
+# PlayerPoints提醒
+MythicMobsSucceedMsg: "&a成功加载MythicMobs,启用MM相关功能!"
+MythicMobsFailureMsg: "&4未找到MythicMobs,未启用MM相关功能!"
+# Citizens提醒
+CitizensSucceedMsg: "&a成功加载Citizens,启用NPC相关功能!"
+CitizensFailureMsg: "&4未找到Citizens,未启用NPC相关功能!"
+
+# /plk 指令管理员出现的提醒
+helps:
+  - "&e&m一一一一一一一一一一一一一&f[&ePlayerTask&f]&e&m一一一一一一一一一一一一一"
+  - "&e/plk addDemand [目标类型] [数量]     &f添加任务目标(需要主手持有对应物品)"
+  - "&e/plk addReward [奖励类型] [数量]     &f添加任务奖励(如果奖励类型是物品需要主手持有对应物品)"
+  - "&e/plk create [任务名称] (任务类型) (任务稀有度)     &f使用gui来创建任务(推荐)"
+  - "&e/plk edit [任务id]                 &f使用gui来重新编辑任务"
+  - "&e/plk addList [任务名称] [称号目标id] [任务奖励id] (任务稀有度)    &f使用指令方式添加一个任务"
+  - "&e/plk addShop [类型] [数量]     &f添加一个商品到任务币商城"
+  - "&e/plk delete [任务类型] [对应id]     &f使用指令方式删除任务,任务目标,任务奖励"
+  - "&e/plk view [类型]     &f使用gui里查看和管理任务,任务目标,任务奖励"
+  - "&e/plk getToday     &f立即执行一次获取今日任务程序"
+  - "&e/plk delToday     &f清空今日任务列表和全部玩家的任务"
+  - "&e/plk open     &f打开每日任务gui"
+  - "&e/plk shop     &f打开任务币商城"
+  - "&e/plk addShop [类型] [价格]     &f添加任务币商品(需要主手持有对应物品)"
+  - "&e/plk delShop [对应id]        &f删除对应id的任务币商品"
+  - "&e/plk getIp     &f获取服务器ip地址"
+  - "&e/plk reload    &f重载配置文件"
+  - "&e/plk addNpcTask [任务id] [npcId] [是否永久任务] [可完成次数] [冷却时间] (前置任务id)   &f添加npc任务"
+  - "&e/plk delNpcTask [npcId]      &f删除npc任务"
+  - "&e/plk setRarity [任务id] [稀有度]   &f设置任务稀有度"
+  - "&e/plk changeItem [任务id] (玩家名称)          &f将对应id的任务转换成任务卷轴(如果输入玩家名称，将会绑定到对应玩家)"
+  - "&e/plk setDescription [任务id] [任务描述]   &f添加任务描述"
+  - "&e[]必填 ()选填"
+
+# 参数错误提醒
+paramFailureMsg: "&4参数错误,请输入/plk help查看正确指令"
+# 非玩家提醒
+noPlayerFailureMsg: "&4该命令只能玩家执行"
+# 类型错误提醒
+typeFailureMsg: "&4类型错误"
+# 数字格式提醒
+amountFailureMsg: "&4数量只能为大于0的数字"
+# id格式提醒
+idFailureMsg: "&4ID只能为大于0的数字"
+# 物品为空提醒
+noAir: "&4你的主手上并没有物品"
+# 命令执行成功提醒
+succeedMsg: "&a命令执行成功"
+# 命令执行失败提醒
+failureMsg: "&4命令执行失败"
+# 点击选择
+select: "&6>>&4>>&5>> &f点击选择 &6<<&4<<&5<<"
+# 完成
+finish: "&a点击完成选择"
+# 没有可选择的MythicMob怪物
+noMythicMob: "&4没有可选择的MythicMob怪物"
+# 没有这种怪物类型
+noNormalMob: "&4没有这种怪物类型"
+# 奖励类型
+rewardType: "&a奖励类型: "
+# 任务类型
+demandType: "&a任务类型: "
+# 提交任务物品
+submitFailureMsg: "&4任务需求物品${item} 数量不足"
+submitSucceedMsg: "&a任务需求物品${item} 提交成功"
+idNotExist: "&a任务id不存在"
+parentIdNotExist: "&a任务前置id不存在"
+npcExistTask: "&a这个npc已经绑定过任务了!"
+taskTypeFailureMsg: "&4任务类型错误"
+updateLog: "&a 检测到最新版本: ${version},更新内容: ${body}"
+currentPage: "&a当前页:"
+totalPages: "&a总页数:"
+nextPage: "&a点击前往下一页"
+previousPage: "&a点击前往上一页"
+
+# 任务目标类型
+demand:
+  all: "&f全部"
+  craftItem: "&f合成"
+  blockBreak: "&f挖掘"
+  Fish: "&f垂钓"
+  Interact: "&f放置"
+  kill: "&f击杀"
+  consume: "&f消耗"
+  submit: "&f提交"
+# 任务奖励类型
+reward:
+  all: "&f全部"
+  vault: "&f金币"
+  playerPoints: "&f点券"
+  coin: "&f任务币"
+  itemStack: "&f物品"
+  command: "&f命令"
+
+# 任务类型
+taskType:
+  everyday: "&f每日任务"
+  npc: "&fNPC任务"
+
+# 商品gui相关
+shop:
+  once: "&f限购一次"
+  infinite: "&f无限购买"
+  lores:
+    - ''
+    - '&f[ &c商品说明 &f]'
+    - '&f&l>> &a商品编号：&f> ${id}'
+    - '&f&l>> &a可买次数：&f> ${num}'
+    - ''
+    - '&f[ &c商品价格 &f]'
+    - ''
+    - '&c&l>> &a购买花费 ${price}'
+    - ''
+    - '&f[ &c个人经济 &f]'
+    - '&c&l>> &a当前拥有 ${playerMoney}'
+    - ''
+    - '&6>>&4>>&5>> ${buyButton} &6<<&4<<&5<<'
+  itemStackBuyButton: "&6>>&4>>&5>> &f&l点击购买 &6<<&4<<&5<<"
+  itemStackNoBalanceButton: "&6>>&4>>&5>> &f&l余额不足 &6<<&4<<&5<<"
+  buySucceed: "&a购买成功"
+  noBalanceButton: "&4&l余额不足"
+
+# open gui 语言文件
+open:
+  # 任务展示lore ${taskTarget}任务目标 ${taskSchedule} 任务进度 ${taskReward}任务奖励 ${buyButton}按钮 ${description}任务描述
+  taskLore:
+    - ''
+    - '&c&l>> &a稀有度: &f${rarity}'
+    - ''
+    - '&f[ &c任务目标 &f]'
+    - ''
+    - '&c&l>> &a${taskSchedule}'
+    - ''
+    - '&f[ &c任务奖励 &f]'
+    - ''
+    - '&c&l>> &a${taskReward}'
+    - ''
+    - '&6>>&4>>&5>> ${buyButton} &6<<&4<<&5<<'
+  # 配置错误提醒
+  configFailureMsg: "&4每日任务插件配置发生错误,任务数量和任务坐标数量不对应"
+  # gui中没任务目标显示
+  noTaskTarget: "&a该任务没有配置任务目标"
+  # gui中没任务奖励
+  noTaskReward: "&a该任务没有配置任务奖励"
+  # 未完成任务提醒
+  notTaskFinish: "&a你还没有完成该任务"
+  # 完成任务提醒
+  taskFinish: "&a你完成了该任务"
+  # 完成任务错误提醒
+  taskFinishFailure: "&a你完成了该任务,但是发生了系统错误"
+  # 完成任务提醒 任务名称变量 &{taskName}
+  taskManager: "&a恭喜你,你达成任务: ${taskName} 的任务目标"
+  noFinish: "&f&l点击完成"
+  finish: "&a&l已完成"
+  isFinish: "&a&l该任务已经完成过了"
+  view: "<<<左面要求物品,右面奖励物品>>>"
+  back: "返回"
+
+# 创建任务目标gui 语言文件
+create:
+  noTaskTarget: "&a没有找到可用的任务目标"
+  taskTargetName: "&a任务目标,序号:&f"
+  taskRewardName: "&a任务奖励,序号:&f"
+  selected: "&6>>&4>>&5>> 已选择 &6<<&4<<&5<<"
+  stepOne: "&a下一步: 设置任务奖励"
+  stepTwo: "&a点击完成设置"
+  finish: "&a创建任务成功,任务名称: ${taskName}, &a任务稀有度: ${rarity}, &a任务ID: &f${taskId}"
+  noFinish: "&4创建任务失败"
+
+guiType:
+  open: "&4每日任务列表"
+  shop: "&4任务币商城"
+  createDemand: "&4请点击选择任务目标"
+  createRewards: "&4请点击选择任务奖励"
+  viewDemand: "&4任务目标列表"
+  viewRewards: "&4任务奖励列表"
+  viewList: "&4任务列表"
+  viewNpc: "&4NPC任务列表"
+  itemStackView: "&4任务目标和奖励物品详情"
+  mythicMob: "&4MythicMob怪物列表"
+  taskNpc: "&4任务列表"
+
+rarity:
+  normal: "&f普通任务"
+  advanced: "&1高级任务"
+  rare: "&5稀有任务"
+  rarer: "&d罕见任务"
+  epic: "&e史诗任务"
+  mythical: "&e&l神话任务"
+
+view:
+  # 任务展示lore ${taskId} 任务ID ${taskType} 任务类型 ${taskTarget}任务目标  ${taskReward}任务奖励 ${buyButton}按钮 ${description}任务描述
+  taskListLore:
+    - ''
+    - '&c&l>> &aID: &f${taskId}'
+    - '&c&l>> &a类型: &f${taskType}'
+    - '&c&l>> &a稀有度: &f${rarity}'
+    - ''
+    - '&f[ &c任务目标 &f]'
+    - ''
+    - '&c&l>> &a${taskTarget}'
+    - ''
+    - '&f[ &c任务奖励 &f]'
+    - ''
+    - '&c&l>> &a${taskReward}'
+    - ''
+    - '&6>>&4>>&5>> &b点击删除 &6<<&4<<&5<<'
+  taskNpcLore:
+    - ''
+    - '&c&l>> &a ID: &f${id}'
+    - '&c&l>> &a 任务Id: &f${taskId}'
+    - '&c&l>> &a 前置任务Id: &f${parentId}'
+    - '&c&l>> &a 前置任务名称: &f${parentName}'
+    - '&c&l>> &a npcId: &f${npcId}'
+    - '&c&l>> &a 是否永久任务: &f${isEver}'
+    - '&c&l>> &a 可以完成几次: &f${number}'
+    - '&c&l>> &a 任务冷却: &f${cd}'
+    - ''
+    - '&6>>&4>>&5>> &b点击删除 &6<<&4<<&5<<'
+  yup: "&a是"
+  none: "&a否"
+  not: "&a无"
+  second: "&a秒"
+  button: "&6>>&4>>&5>> &b点击删除 &6<<&4<<&5<<"
+
+# 用于输入指令时候tab自动提醒帮助(只建议翻译,不建议更改)
+tabHelp:
+  name: "请输入任务名称"
+  demandId: "请输入任务目标ID,例如 1,2,3"
+  rewardId: "请输入任务奖励ID,例如 6,8,10"
+  amount: "请输入数量"
+  deleteId: "请输入删除的id"
+  price: "请输入价格"
+  taskId: "请输入任务id"
+  npcId: "请输入npcId"
+  number: "请输入可完成次数"
+  cd: "请输入任务冷却时间"
+  parentId: "请输入前置任务id"
+  command: "请输入命令 ${player} 代表玩家,空格用#代替"
+  description: "请输入简短描述"
+  taskDescription: "请输入任务描述,可使用颜色代码&"
+
+# 刷新按钮log
+refresh:
+  name: "&a刷新任务"
+  lore:
+    - ''
+    - '&f[ &c刷新描述 &f]'
+    - ''
+    - '&c&l>> 点击按钮可以刷新今日任务!'
+    - '&c&l>> 如果已经领取并完成过任务!'
+    - '&c&l>> 不能进行继续刷新!'
+    - ''
+    - '&c&l>> 可刷新次数: &a${times}'
+    - ''
+    - '&f[ &c刷新价格 &f]'
+    - ''
+    - '&c&l>> 金币: &a${cost}'
+    - '&c&l>> 点券: &a${points}'
+    - ''
+    - '&6>>&4>>&5>> &b${button} &6<<&4<<&5<<'
+  refreshButton: "&6>>&4>>&5>> &b点击刷新 &6<<&4<<&5<<"
+  noButton: "&6>>&4>>&5>> &c无法刷新 &6<<&4<<&5<<"
+  # 命令执行成功提醒
+  succeedMsg: "&a任务刷新成功"
+  # 命令执行失败提醒
+  failureMsg: "&a任务刷新失败"
+  notSufficientFunds: "&a余额不足"
+
+# 提醒按钮log
+title:
+  name: "&e每日任务系统"
+  lore:
+    - ''
+    - '&c&l>> 任务&a每天&c&l自动随机刷新!'
+    - '&c&l>> 鼠标&a左键&c&l点击完成任务!'
+    - '&c&l>> 鼠标&a中键&c&l点击提交任务物品!'
+    - '&c&l>> 鼠标&a右键&c&l点击查看任务要求和奖励!'
+
+taskNpc:
+  # 任务展示lore ${taskTarget}任务目标  ${taskReward}任务奖励 ${taskNumber}任务次数 ${buyButton}按钮
+  taskListLore:
+    - ''
+    - '&f[ &c任务目标 &f]'
+    - ''
+    - '&c&l>> &a${taskTarget}'
+    - ''
+    - '&f[ &c任务奖励 &f]'
+    - ''
+    - '&c&l>> &a${taskReward}'
+    - ''
+    - '&f[ &c可完成次数 &f]'
+    - ''
+    - '&c&l>> &a${taskNumber}'
+    - ''
+    - '&6>>&4>>&5>> &a点击领取 &6<<&4<<&5<<'
+  isEver: "&a无限"
+  takeSucceedMsg: "&a领取任务成功"
+  takeFailureMsg: "&a领取任务失败"
+  upperLimit: "&a你已经完成过${task}&a了,不能重复完成!"
+  timeMsg: "&a${time}秒后,你才可以继续领取该任务"
+  parentTaskMsg: "&a你需要先完成${task}&a,才能接该任务!"
+  help:
+    name: "&eNpc任务系统"
+    lore:
+      - ''
+      - '&c&l>> 鼠标&a左键&c&l点击完成任务!'
+      - '&c&l>> 鼠标&a中键&c&l点击提交任务物品!'
+      - '&c&l>> 鼠标&a右键&c&l点击查看任务要求和奖励!'
+
+# 任务卷轴 gui 语言文件
+reel:
+  # 任务展示lore ${bindPlayer} 绑定玩家 ${taskTarget}任务目标 ${taskSchedule} 任务进度 ${taskReward}任务奖励 ${reelButton}按钮
+  taskLore:
+    - ''
+    - '&c&l>> &a绑定玩家: &f${bindPlayer}'
+    - '&c&l>> &a稀有度: &f${rarity}'
+    - ''
+    - '&f[ &c任务目标 &f]'
+    - ''
+    - '&c&l>> &a${taskSchedule}'
+    - ''
+    - '&f[ &c任务奖励 &f]'
+    - ''
+    - '&c&l>> &a${taskReward}'
+    - ''
+    - '&6>>&4>>&5>> ${reelButton} &6<<&4<<&5<<'
+  noBindPlayer: "&f无"
+  noFinish: "&f&l点击完成"
+  finish: "&a&l已完成"

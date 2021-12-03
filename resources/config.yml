@@ -1,0 +1,39 @@
+# 语言文件(Language files) [optional 中文简体:zh_CN;中文繁體:zh_TW;English:en_US]
+language: zh_CN
+
+# 是否开启更新提醒,建议开启(Whether to turn on update alerts, recommended)
+isCheckUpdate: true
+
+# op登录时候是否发送更新提醒(Whether to send update alerts when op logs in)
+isCheckUpdateToOpMsg: true
+
+# 拥有playerTask.vip权限的获取的奖励倍数 设置1为不启用(Reward multiplier for those with playerTask.vip access set 1 to not enable)
+vipReward: 1
+
+# 每日任务刷新时间，24小时制(Daily task refresh time, 24 hours)
+setTodayDate: "00:00"
+
+# 每日随机任务数量(Number of random tasks per day)
+todayTaskNum: 3
+
+# 每日任务在/plk open中的位置(Location of daily tasks in /plt open)
+todayTaskIndex:
+  - 29
+  - 31
+  - 33
+
+# 任务稀有度刷新概率(Mission Rarity Refresh Probability)
+# 颜色是推荐设置的任务名称颜色，方便玩家识别任务(The colour is the recommended setting of the mission name colour to make it easier for players to identify the mission)
+rarity:
+  # 普通任务（白色） normal task (white) &f
+  normal: 0.8
+  # 高级任务（蓝色）advanced task (blue) &1
+  advanced: 0.5
+  # 稀有任务（紫色） rare task (purple) &5
+  rare: 0.3
+  # 罕见任务（粉色）rarer task (pink) &d
+  rarer: 0.2
+  # 史诗任务（橙色）epic task (orange) &e
+  epic: 0.1
+  # 神话任务 (渐变色) mythical task (gradient) &e&l
+  mythical: 0.01
