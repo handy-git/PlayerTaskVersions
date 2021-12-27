@@ -1,25 +1,27 @@
-# PlayerTask
+# PlayerTaskApi
 
+#### 使用方法
 
-> PlayerTask版本配置文件管理
-> PlayerTask version profile management
+## 使用方法
 
-## version
-> PlayerTask-1.10.1
+#### 初始化jar
+- 下载代码中repo文件夹的PlayerTask-1.11.0.jar
+- 或者下载releases里的jar文件导入你的项目中
+- 或者使用maven引入依赖
 
-## resources
+```
+<repositories>
+   <repository>
+      <id>player-title</id>
+      <url>https://raw.githubusercontent.com/handy-git/PlayerTaskVersions/master/repo</url>
+   </repository>
+</repositories>
 
-languages 语言文件  
-config.yml 配置文件  
-item.json 翻译文件  
-material.yml 材质文件  
-monster.yml 怪物名文件  
-storage.yml 存储文件  
+<dependency>
+  <groupId>com.handy.playertask</groupId>
+  <artifactId>PlayerTask</artifactId>
+  <version>1.11.0</version>
+</dependency>
+```
 
-## 提出问题 issue
-
-[issue](https://github.com/handy-git/PlayerTaskVersions/issues/new)
-
-## 贡献 Contribution
-
-fork本项目，然后提交pr即可(fork this item and then just submit pr)  
+具体查询: PlayerTaskApi
