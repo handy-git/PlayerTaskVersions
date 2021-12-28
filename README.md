@@ -25,3 +25,6 @@
 ```
 
 具体查询: [PlayerTaskApi](https://github.com/handy-git/PlayerTaskVersions/blob/master/src/main/java/com/handy/playertask/api/PlayerTaskApi.java)
+
+
+[javadoc](player-task-versions.vercel.app/) 
