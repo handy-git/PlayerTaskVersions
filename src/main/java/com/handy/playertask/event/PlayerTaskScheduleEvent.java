@@ -27,10 +27,23 @@ public class PlayerTaskScheduleEvent extends Event {
         return HANDLERS;
     }
 
+    /**
+     * getHandlerList
+     *
+     * @return HandlerList
+     */
     public static HandlerList getHandlerList() {
         return HANDLERS;
     }
 
+    /**
+     * 构造
+     *
+     * @param player     player
+     * @param demandType demandType
+     * @param amount     amount
+     * @param content    content
+     */
     public PlayerTaskScheduleEvent(Player player, String demandType, Integer amount, String content) {
         this.player = player;
         this.demandType = demandType;

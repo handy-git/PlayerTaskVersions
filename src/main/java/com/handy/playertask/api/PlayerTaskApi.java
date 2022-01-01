@@ -20,6 +20,11 @@ public class PlayerTaskApi {
         private static final PlayerTaskApi INSTANCE = new PlayerTaskApi();
     }
 
+    /**
+     * 获取PlayerTaskApi
+     *
+     * @return PlayerTaskApi
+     */
     public static PlayerTaskApi getInstance() {
         return PlayerTaskApi.SingletonHolder.INSTANCE;
     }
