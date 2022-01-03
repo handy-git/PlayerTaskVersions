@@ -1,0 +1,345 @@
+# Alert when you don't have permission
+noPermission: "&4You do not have permission to execute this command"
+# Remind when reloading plugins
+reloadMsg: "&aPlugin reload complete"
+# vault alert
+vaultSucceedMsg: "&aSuccessfully loaded Vault, enabling economy-related features!"
+vaultFailureMsg: "&4Vault not found, economy-related features not enabled!"
+# placeholderAPI alert
+placeholderAPISucceedMsg: "&aSuccessfully loaded placeholderApi, enable custom variable function!"
+placeholderAPIFailureMsg: "&4no placeholderApi found, custom variables not enabled!"
+# PlayerPointsAlerts
+playerPointsSucceedMsg: "&aSuccessfully loaded PlayerPoints, enable points related features!"
+playerPointsFailureMsg: "&4PlayerPoints not found, not enabled!"
+# PlayerPointsAlerts
+MythicMobsSucceedMsg: "&aSuccessfully loaded MythicMobs, MM related features enabled!"
+MythicMobsFailureMsg: "&4MythicMobs not found, MM-related features not enabled!"
+# Citizens alert
+CitizensSucceedMsg: "&aSuccessfully loaded Citizens, enabling NPC related features!"
+CitizensFailureMsg: "&4Citizens not found, NPC-related features not enabled!"
+
+# /plk command administrator alerts appear
+helps:
+  - "&e&m一一一一一一一一一一一一一&f[&ePlayerTask&f]&e&m一一一一一一一一一一一一一"
+  - "&e/plk addDemand [target type] [number] &f add mission target (requires master to have corresponding item in hand)"
+  - "&e/plk addReward [reward type] [number] &f add quest reward (requires master to have corresponding item in hand if reward type is item)"
+  - "&e/plk create [quest name] (quest type) (quest rarity) &f use gui to create quest (recommended)"
+  - "&e/plk edit [quest id] &f use gui to re-edit quests"
+  - "&e/plk addList [quest name] [title target id] [quest reward id] (quest rarity) &f add a quest using the command method"
+  - "&e/plk addShop [type] [quantity] &f add an item to the Quest Coin Shop"
+  - "&e/plk delete [quest type] [corresponding id] &f delete quest,quest goal,quest reward using the command"
+  - "&e/plk view [type] &f use the gui to view and manage tasks, task goals, task rewards"
+  - "&e/plk getToday &f immediately execute a get today task procedure"
+  - "&e/plk delToday &f clear today's task list and all players' tasks"
+  - "&e/plk open &f open the daily task gui"
+  - "&e/plk shop &f open mission coin mall"
+  - "&e/plk addShop [type] [price] &f add questcoin items (need to have corresponding items in main hand)"
+  - "&e/plk delShop [corresponding id] &fRemove the taskcoin item with the corresponding id"
+  - "&e/plk getIp &f get server ip address"
+  - "&e/plk reload &f reload configuration file"
+  - "&e/plk addNpcTask [task id] [npcId] [whether task is permanent] [number of completable] [cooldown] (predecessor task id) &f add npc task"
+  - "&e/plk delNpcTask [npcId] &f remove npc task"
+  - "&e/plk setRarity [task id] [rarity] &f set task rarity"
+  - "&e/plk changeItem [task id] (player name) &f convert the task with the corresponding id into a task scroll (if you enter a player name, it will be bound to the corresponding player)"
+  - "&e/plk setDescription [quest id] [quest description] &f add quest description"
+  - "&e[] required ()optional"
+
+# Parameter error alert
+paramFailureMsg: "&4parameter error, please enter /plk help to see the correct command"
+# Non-player alert
+noPlayerFailureMsg: "&4This command can only be executed by the player"
+# Type error alert
+typeFailureMsg: "&4type error"
+# Number format alert
+amountFailureMsg: "&4number can only be a number greater than 0"
+# id format alert
+idFailureMsg: "&4ID can only be a number greater than 0"
+# Item is empty reminder
+noAir: "&4You don't have an item in your master's hand"
+# Reminder of successful command execution
+succeedMsg: "&acommand execution succeeded"
+# Reminder of command execution failure
+failureMsg: "&4Command execution failed"
+# Click to select
+select: "&6>>&4>>&5>> &fClick to select &6<<&4<<&5<<"
+# finish
+finish: "&aClick to finish selection"
+# No MythicMob monsters to select
+noMythicMob: "&4No MythicMob monsters available for selection"
+# There is no such monster type
+noNormalMob: "&4No such monster type"
+# rewardType
+rewardType: "&areward type: "
+# Quest type
+demandType: "&aquest type: "
+# Submit quest item
+submitFailureMsg: "&4task demand item ${item} insufficient quantity"
+submitSucceedMsg: "&atask demand item${item} submitted successfully"
+idNotExist: "&atask id does not exist"
+parentIdNotExist: "&atask predecessor id does not exist"
+npcExistTask: "&aThis npc has been bound to a task!"
+taskTypeFailureMsg: "&4task type error"
+updateLog: "&aLatest version detected: ${version},update content: ${body}"
+currentPage: "&aCurrent page:"
+totalPages: "&aTotal pages:"
+nextPage: "&aClick to next page"
+previousPage: "&aClick to go to previous page"
+
+# Task target type
+demand:
+  all: "&f all"
+  craftItem: "&f Synthesis"
+  blockBreak: "&fDigging"
+  Fish: "&f fishing"
+  Interact: "&f place"
+  kill: "&fKill"
+  consume: "&f consume"
+  submit: "&f submit"
+# Quest reward type
+reward:
+  all: "&fAll"
+  vault: "&f gold"
+  playerPoints: "&f points"
+  coin: "&f quest coins"
+  itemStack: "&f items"
+  command: "&f command"
+
+# taskType
+taskType:
+  everyday: "&fdaily task"
+  npc: "&fNPC task"
+
+# Merchandise gui related
+shop:
+  once: "&flimited to one purchase"
+  infinite: "&fUnlimited purchase"
+  lores:
+    - ''
+    - '&f[ &c product description &f]'
+    - '&f>> &a item number: &f> ${id}'
+    - '&f>> &aBuyable times: &f> ${num}'
+    - ''
+    - '&f[ &c item price &f]'
+    - ''
+    - '&c>> &aBuying cost ${price}'
+    - ''
+    - '&f[ &cpersonal economy &f]'
+    - '&c>> &a currently owns ${playerMoney}'
+    - ''
+    - '&6>>&4>>&5>> ${buyButton} &6<<&4<<&5<<'
+  itemStackBuyButton: "&6>>&4>>&5>> &f click to buy &6<&4<&5<<"
+  itemStackNoBalanceButton: "&6>>&4>>&5>> &fInsufficient Balance &6<&4<&5<<"
+  buySucceed: "&aPurchase successful"
+  noBalanceButton: "&4 balance insufficient"
+# open gui language files
+open:
+  # taskDisplaylore ${taskTarget} taskTarget ${taskSchedule} taskProgress ${taskReward} taskReward ${buyButton} button ${description} taskDescription
+  taskLore:
+    - ''
+    - '&c>> &aRarity: &f${rarity}'
+    - ''
+    - '&f[ &c task goal &f]'
+    - ''
+    - '&c>> &a${taskSchedule}'
+    - ''
+    - '&f[ &cTaskReward &f]'
+    - ''
+    - '&c>> &a${taskReward}'
+    - ''
+    - '&6>>&4>>&5>> ${buyButton} &6<<&4<<&5<<'
+  # Configuration error alert
+  configFailureMsg: "&4 An error occurred in the daily task plugin configuration, the number of tasks and the number of task coordinates do not correspond"
+  # No task target displayed in gui
+  noTaskTarget: "&aTask target is not configured for this task"
+  # No task reward in gui
+  noTaskReward: "&a No task reward is configured for this task"
+  # Reminder for incomplete tasks
+  notTaskFinish: "&aYou haven't completed this task yet"
+  # Reminder of completed tasks
+  taskFinish: "&aYou have completed the task"
+  # Reminder of task completion errors
+  taskFinishFailure: "&aYou completed the task, but a system error occurred"
+  # Task completion alert Task name variable &{taskName}
+  taskManager: "&aCongratulations, you have reached the task goal of task: ${taskName}"
+  noFinish: "&fClick Finish"
+  finish: "&a has completed"
+  isFinish: "&aThe task has already been completed"
+  view: "<<<Required items on the left, rewarded items on the right>>"
+  back: "back"
+
+# Create quest target gui language file
+create:
+  noTaskTarget: "&a no task targets found"
+  taskTargetName: "&a task target, serial number: &f"
+  taskRewardName: "&a task reward, serial number:&f"
+  selected: "&6>>&4>>&5>> Selected &6<<&4<<&5<"
+  stepOne: "&aNext step: Set task reward"
+  stepTwo: "&aClick to finish setting"
+  finish: "&aCreate task successfully, Task name: ${taskName}, &aTask rarity: ${rarity}, &aTask ID: &f${taskId}"
+  noFinish: "&4 Failed to create task"
+
+guiType:
+  open: "&4 Daily task list"
+  shop: "&4TaskcoinShop"
+  createDemand: "&4Please click to select task target"
+  createRewards: "&4Please click to select mission rewards"
+  viewDemand: "&4List of mission targets"
+  viewRewards: "&4 list of mission rewards"
+  viewList: "&4List of quests"
+  viewNpc: "&4NPC quest list"
+  itemStackView: "&4 quest objectives and reward item details"
+  mythicMob: "&4MythicMob monster list"
+  taskNpc: "&4Task list"
+
+rarity:
+  normal: "&fNormal quests"
+  advanced: "&1Advanced quests"
+  rare: "&5Rare quests"
+  rarer: "&d rare quests"
+  epic: "&eEpic quests"
+  mythical: "&e mythical quests"
+
+view:
+  # taskListLore ${taskId} task ID ${taskType} task type ${taskTarget} task target ${taskReward} task reward ${buyButton} button ${description} task description
+  taskListLore:
+    - ''
+    - '&c>> &aID: &f${taskId}'
+    - '&c>> &aType: &f${taskType}'
+    - '&c>> &aRarity: &f${rarity}'
+    - ''
+    - '&f[ &cTaskTarget &f]'
+    - ''
+    - '&c>> &a${taskTarget}'
+    - ''
+    - '&f[ &cTaskReward &f]'
+    - ''
+    - '&c>> &a${taskReward}'
+    - ''
+    - '&6>>&4>>&5>> &bClick to delete &6<<&4<<&5<<'
+  taskNpcLore:
+    - ''
+    - '&c>> &a ID: &f${id}'
+    - '&c>> &a TaskId: &f${taskId}'
+    - '&c>> &a pre-taskId: &f${parentId}'
+    - '&c>> &a Preceding task name: &f${parentName}'
+    - '&c>> &a npcId: &f${npcId}'
+    - '&c>> &a whether permanent task: &f${isEver}'
+    - '&c>> &a How many times it can be done: &f${number}'
+    - '&c>> &a Mission cooldown: &f${cd}'
+    - ''
+    - '&6>>&4>>&5>> &bClick to delete &6<<&4<<&5<<'
+  yup: "&a yes"
+  none: "&a no"
+  not: "&a no"
+  second: "&a seconds"
+  button: "&6>>&4>>&5>> &b click to delete &6<<&4<&5<<"
+
+# for input command when the tab automatically remind help (only recommended translation, not recommended change)
+tabHelp:
+  name: "Please enter the task name"
+  demandId: "Please enter the task target ID, e.g. 1,2,3"
+  rewardId: "Please enter the task reward ID, e.g. 6,8,10"
+  amount: "Please enter the amount"
+  deleteId: "Please enter the id of the deletion"
+  price: "Please enter the price"
+  taskId: "Please enter the task id"
+  npcId: "Please enter npcId"
+  number: "Please enter the number of times you can complete"
+  cd: "Please enter the task cooldown time"
+  parentId: "Please enter the pre-task id"
+  command: "Please enter the command ${player} for the player, replace spaces with #"
+  description: "Please enter a short description"
+  taskDescription: "Please enter the task description, you can use color code &"
+
+# Refresh button log
+refresh:
+  name: "&a refresh task"
+  lore:
+    - ''
+    - '&f[ &c refresh description &f]'
+    - ''
+    - '&c>> Click the button to refresh today task!'
+    - '&c>> If the task is completed!'
+    - '&c>> Cannot proceed to refresh!'
+    - ''
+    - '&c>> Refreshable times: &a${times}'
+    - ''
+    - '&f[ &c refresh price &f]'
+    - ''
+    - '&c>> Gold: &a${cost}'
+    - '&c>> Points: &a${points}'
+    - ''
+    - '&6>>&4>>&5>> &b${button} &6<<&4<<&5<<'
+  refreshButton: "&6>>&4>>&5>> &bClick to refresh &6<&4<&5<<"
+  noButton: "&6>>&4>>&5>> &c unable to refresh &6<&4<&5<<"
+  # Command execution success alert
+  successMsg: "&a task refresh successful"
+  # Command execution failure alert
+  failureMsg: "&a task refresh failed"
+  notSufficientFunds: "&a balance is insufficient"
+
+# Reminder button log
+title:
+  name: "&e Daily Task System"
+  lore:
+    - ''
+    - '&c>> Tasks &a daily'
+    - '&c>> &cautomatically refresh randomly!'
+    - '&c>> Mouse&a left click'
+    - '&c>> &cto complete the task!'
+    - '&c>> Mouse&a middle button'
+    - '&c>> &cclick to submit quest items!'
+    - '&c>> Mouse&a right click'
+    - '&c>> &cto view quest requirements and rewards!'
+
+taskNpc:
+  # taskShowlore ${taskTarget} taskTarget ${taskReward} taskReward ${taskNumber} taskNumber ${buyButton} button
+  taskListLore:
+    - ''
+    - '&f[ &c taskTarget &f]'
+    - ''
+    - '&c>> &a${taskTarget}'
+    - ''
+    - '&f[ &cTaskReward &f]'
+    - ''
+    - '&c>> &a${taskReward}'
+    - ''
+    - '&f[ &cCompleteable times &f]'
+    - ''
+    - '&c>> &a${taskNumber}'
+    - ''
+    - '&6>>&4>>&5>> &aClick to collect &6<<&4<<&5<<'
+  isEver: "&a unlimited"
+  takeSucceedMsg: "&a claiming mission successful"
+  takeFailureMsg: "&aFailure to collect the task"
+  upperLimit: "&aYou have already completed ${task}&a, you can't complete it again!"
+  timeMsg: "&a${time} seconds later, you can continue to pick up the task"
+  parentTaskMsg: "&aYou need to complete ${task}&a before you can take this task!"
+  help:
+    name: "&eNpc Task System"
+    lore:
+      - ''
+      - '&c>> Mouse&a left click&c to complete the task!'
+      - '&c>> Mouse&a middle button&c click to submit quest item!'
+      - '&c>> Mouse&a right click&c to view quest requirements and rewards!'
+
+# quest scroll gui language file
+reel:
+  # taskShowlore ${bindPlayer} bind player ${taskTarget} task target ${taskSchedule} task progress ${taskReward} task reward ${reelButton} button
+  taskLore:
+    - ''
+    - '&c>> &aBindPlayer: &f${bindPlayer}'
+    - '&c>> &aRarity: &f${rarity}'
+    - ''
+    - '&f[ &cQuestObjectives &f]'
+    - ''
+    - '&c>> &a${taskSchedule}'
+    - ''
+    - '&f[ &cTaskReward &f]'
+    - ''
+    - '&c>> &a${taskReward}'
+    - ''
+    - '&6>>&4>>&5>> ${reelButton} &6<<&4<<&5<<'
+  noBindPlayer: "&f none"
+  noFinish: "&fClick to finish"
+  finish: "&a has finished"
