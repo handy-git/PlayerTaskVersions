@@ -121,4 +121,28 @@ public class PlayerTaskApi {
         return true;
     }
 
+    /**
+     * 设置玩家任务币数量
+     *
+     * @param player 玩家
+     * @param amount 数量
+     * @return true成功/false失败
+     * @since 1.13.2
+     */
+    public boolean setCoin(Player player, Integer amount) {
+        return true;
+    }
+
+    /**
+     * 设置玩家任务币数量
+     *
+     * @param playerName 玩家名
+     * @param amount     数量
+     * @return true成功/false失败
+     * @since 1.13.2
+     */
+    public boolean setCoin(String playerName, Integer amount) {
+        return true;
+    }
+
 }

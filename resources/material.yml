@@ -63,19 +63,34 @@ shop:
   # 自定义模型材质 1.14+生效 0为不生效(Custom model material 1.14+ effective 0 is not effective)
   custom-model-data: 1
 
-# 上一页(Previous page)
+# 上一页
 previousPage:
-  # 按钮材质(Button material)
+  enable: true
+  index: 48
+  name: "    &8[&a上一页&8]"
+  lore:
+    - '&8▪ &7点击打开上一页'
+    - '&8▪ &7当前页码 &a${pageNum}'
+    - '&8▪ &7总页码数 &a${count}'
+  # 材质
   material: PAPER
-  # 自定义模型材质 1.14+生效 0为不生效(Custom model material 1.14+ effective 0 is not effective)
-  custom-model-data: 2
+  isEnchant: false
+  custom-model-data: 0
 
-# 下一页(Next page)
+# 下一页
 nextPage:
-  # 按钮材质(Button material)
+  enable: true
+  index: 50
+  name: "    &8[&a下一页&8]"
+  lore:
+    - '&8▪ &7点击打开下一页'
+    - '&8▪ &7当前页码 &a${pageNum}'
+    - '&8▪ &7总页码数 &a${count}'
+  # 材质
   material: PAPER
-  # 自定义模型材质 1.14+生效 0为不生效(Custom model material 1.14+ effective 0 is not effective)
-  custom-model-data: 1
+  isEnchant: false
+  # 自定义模型材质 1.14+生效 0为不生效
+  custom-model-data: 0
 
 # 卷轴任务(Reel tasks)
 reel:

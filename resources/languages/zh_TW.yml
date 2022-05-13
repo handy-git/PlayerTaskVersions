@@ -42,6 +42,7 @@ helps:
   - "&e/plk setRarity [任務id] [稀有度]   &f設置任務稀有度"
   - "&e/plk changeItem [任務id] (玩家名稱)          &f將對應id的任務轉換成任務卷軸(如果輸入玩家名稱，將會綁定到對應玩家)"
   - "&e/plk setDescription [任務id] [任務描述]   &f添加任務描述"
+  - "&e/plk coin [give|take|set] [玩家名稱] [數量]   &f變更玩家任務幣"
   - "&e[]必填 ()選填"
 
 # 參數錯誤提醒
@@ -251,6 +252,7 @@ tabHelp:
   command: "請輸入命令 ${player} 代表玩家,空格用#代替"
   description: "請輸入簡短描述"
   taskDescription: "請輸入任務描述,可使用顏色代碼&"
+  coinAmount: "請輸入金額,必須正整數"
 
 # 刷新按鈕log
 refresh:
@@ -317,7 +319,7 @@ taskNpc:
     lore:
       - ''
       - '&c&l>> 鼠標&a左鍵&c&l點擊完成任務!'
-      - '&c&l>> 鼠標&a中鍵&c&l點擊提交任務物品!'
+      - '&c&l>> 鼠標&a左鍵&c&l點擊提交任務物品!'
       - '&c&l>> 鼠標&a右鍵&c&l點擊查看任務要求和獎勵!'
 
 # 任務卷軸 gui 語言文件

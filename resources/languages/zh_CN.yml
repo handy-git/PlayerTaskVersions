@@ -42,6 +42,7 @@ helps:
   - "&e/plk setRarity [任务id] [稀有度]   &f设置任务稀有度"
   - "&e/plk changeItem [任务id] (玩家名称)          &f将对应id的任务转换成任务卷轴(如果输入玩家名称，将会绑定到对应玩家)"
   - "&e/plk setDescription [任务id] [任务描述]   &f添加任务描述"
+  - "&e/plk coin [give|take|set] [玩家名称] [数量]   &f变更玩家任务币"
   - "&e[]必填 ()选填"
 
 # 参数错误提醒
@@ -251,6 +252,7 @@ tabHelp:
   command: "请输入命令 ${player} 代表玩家,空格用#代替"
   description: "请输入简短描述"
   taskDescription: "请输入任务描述,可使用颜色代码&"
+  coinAmount: "请输入金额,必须正整数"
 
 # 刷新按钮log
 refresh:
@@ -286,7 +288,7 @@ title:
     - ''
     - '&c&l>> 任务&a每天&c&l自动随机刷新!'
     - '&c&l>> 鼠标&a左键&c&l点击完成任务!'
-    - '&c&l>> 鼠标&a中键&c&l点击提交任务物品!'
+    - '&c&l>> 鼠标&a左键&c&l点击提交任务物品!'
     - '&c&l>> 鼠标&a右键&c&l点击查看任务要求和奖励!'
 
 taskNpc:

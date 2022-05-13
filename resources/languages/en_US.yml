@@ -42,6 +42,7 @@ helps:
   - "&e/plk setRarity [task id] [rarity] &f set task rarity"
   - "&e/plk changeItem [task id] (player name) &f convert the task with the corresponding id into a task scroll (if you enter a player name, it will be bound to the corresponding player)"
   - "&e/plk setDescription [quest id] [quest description] &f add quest description"
+  - "&e/plk coin [give | take | set] [player name] [number] &f change players task currency"
   - "&e[] required ()optional"
 
 # Parameter error alert
@@ -250,6 +251,7 @@ tabHelp:
   command: "Please enter the command ${player} for the player, replace spaces with #"
   description: "Please enter a short description"
   taskDescription: "Please enter the task description, you can use color code &"
+  coinAmount: "Please enter the amount, must be a positive integer"
 
 # Refresh button log
 refresh:
@@ -320,7 +322,7 @@ taskNpc:
     lore:
       - ''
       - '&c>> Mouse&a left click&c to complete the task!'
-      - '&c>> Mouse&a middle button&c click to submit quest item!'
+      - '&c>> Mouse&a left button&c click to submit quest item!'
       - '&c>> Mouse&a right click&c to view quest requirements and rewards!'
 
 # quest scroll gui language file
