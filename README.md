@@ -1,30 +1,33 @@
-# PlayerTaskApi
+# 我的世界Minecraft
 
-#### 使用方法
+### 玩家任务 PlayerTask 插件 的 API
 
-## 使用方法
+##### [MCBBS发布地址](https://www.mcbbs.net/thread-1084534-1-1.html)
 
-#### 初始化jar
-- 下载代码中repo文件夹的PlayerTask-1.13.2.jar
-- 或者下载releases里的jar文件导入你的项目中
-- 或者使用maven引入依赖
+##### [文档地址](https://handy-git.gitee.io/rice-doc/#/PlayerTask/zh_CN/)
 
+#### API使用教程
+
+[![](https://jitpack.io/v/com.gitee.handy-api/PlayerTask.svg)](https://jitpack.io/#com.gitee.handy-api/PlayerTask)
+
+要将本项目添加到您的构建中：
+
+步骤 1.将 JitPack 存储库添加到您的构建文件
 ```
 <repositories>
-   <repository>
-      <id>player-title</id>
-      <url>https://raw.githubusercontent.com/handy-git/PlayerTaskVersions/master/repo</url>
-   </repository>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
 </repositories>
-
+```
+步骤 2.添加依赖项
+```
 <dependency>
-  <groupId>com.handy.playertask</groupId>
-  <artifactId>PlayerTask</artifactId>
-  <version>1.13.2</version>
+    <groupId>com.gitee.handy-api</groupId>
+    <artifactId>PlayerTask</artifactId>
+    <version>1.13.5</version>
 </dependency>
 ```
 
-具体查询: [PlayerTaskApi](https://github.com/handy-git/PlayerTaskVersions/blob/master/src/main/java/com/handy/playertask/api/PlayerTaskApi.java)
-
-
-[javadoc](player-task-versions.vercel.app/) 
+[javadoc](https://handy-api.gitee.io/playertask/)
