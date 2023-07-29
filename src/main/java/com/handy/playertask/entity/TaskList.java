@@ -12,6 +12,9 @@ import java.util.List;
 @Data
 public class TaskList {
 
+    /**
+     * ID
+     */
     private Integer id;
 
     /**

@@ -4,6 +4,7 @@ import com.handy.playertask.entity.TaskList;
 import org.bukkit.entity.Player;
 
 import java.util.List;
+import java.util.UUID;
 
 /**
  * API
@@ -74,6 +75,17 @@ public class PlayerTaskApi {
     }
 
     /**
+     * 任务币数量
+     *
+     * @param playerUuid 玩家Uid
+     * @return 任务币数量
+     * @since 2.0.0
+     */
+    public Integer findAmountByPlayer(UUID playerUuid) {
+        return 0;
+    }
+
+    /**
      * 添加玩家任务币数量
      *
      * @param player 玩家
@@ -94,6 +106,18 @@ public class PlayerTaskApi {
      * @since 1.11.0
      */
     public boolean addCoin(String playerName, Integer amount) {
+        return true;
+    }
+
+    /**
+     * 添加玩家任务币数量
+     *
+     * @param playerUuid 玩家Uid
+     * @param amount     数量
+     * @return true 成功
+     * @since 2.0.0
+     */
+    public boolean addCoin(UUID playerUuid, Integer amount) {
         return true;
     }
 
@@ -122,6 +146,18 @@ public class PlayerTaskApi {
     }
 
     /**
+     * 减少玩家任务币数量
+     *
+     * @param playerUuid 玩家Uid
+     * @param amount     数量
+     * @return true 成功
+     * @since 2.0.0
+     */
+    public boolean subtractCoin(UUID playerUuid, Integer amount) {
+        return true;
+    }
+
+    /**
      * 设置玩家任务币数量
      *
      * @param player 玩家
@@ -142,6 +178,19 @@ public class PlayerTaskApi {
      * @since 1.13.2
      */
     public boolean setCoin(String playerName, Integer amount) {
+        return true;
+    }
+
+
+    /**
+     * 设置玩家任务币数量
+     *
+     * @param playerUuid 玩家Uid
+     * @param amount     数量
+     * @return true成功/false失败
+     * @since 2.0.0
+     */
+    public boolean setCoin(UUID playerUuid, Integer amount) {
         return true;
     }
 

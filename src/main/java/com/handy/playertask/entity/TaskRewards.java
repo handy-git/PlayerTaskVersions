@@ -10,6 +10,9 @@ import lombok.Data;
 @Data
 public class TaskRewards {
 
+    /**
+     * ID
+     */
     private Integer id;
 
     /**

@@ -10,6 +10,9 @@ import lombok.Data;
 @Data
 public class TaskDemand {
 
+    /**
+     * ID
+     */
     private Integer id;
 
     /**

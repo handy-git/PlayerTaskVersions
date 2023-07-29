@@ -15,9 +15,6 @@ public class PlayerTask extends JavaPlugin {
         INSTANCE = this;
     }
 
-    /**
-     * 关闭处理
-     */
     @Override
     public void onDisable() {
     }
