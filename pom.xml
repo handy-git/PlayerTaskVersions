@@ -7,7 +7,7 @@
     <groupId>com.handy.playertask</groupId>
     <artifactId>PlayerTask</artifactId>
     <name>PlayerTask</name>
-    <version>2.2.6</version>
+    <version>2.2.7</version>
     <description>一款有点好用的玩家任务插件</description>
 
     <properties>
